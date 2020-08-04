@@ -18,7 +18,7 @@ const ModalWrap = (props) => {
 		>
 			<span className="close" onClick={props.closeModal}>X</span>
 			<h2>{modal.selectedCurrencyName}</h2>
-			<h3>Current Price: £{selected.currencyPrice}</h3>
+			<h3>Current Price: ${selected.currencyPrice}</h3>
 
 			<div className="modal-container">
 				<ResponsiveContainer width="100%" height={300}>
@@ -27,7 +27,7 @@ const ModalWrap = (props) => {
 						<XAxis dataKey="time">
 						    <Label value="Date" offset={0} position="insideBottom" />
 						</XAxis>
-						<YAxis domain={['dataMin', 'dataMax']} label={{ value: 'Price(£)', angle: -90, position: 'insideLeft' }}/>
+						<YAxis domain={['dataMin', 'dataMax']} label={{ value: 'Price($)', angle: -90, position: 'insideLeft' }}/>
 						<CartesianGrid strokeDasharray="3 3"/>
 						<Tooltip/>
 						<Legend verticalAlign="top" height={36}/>

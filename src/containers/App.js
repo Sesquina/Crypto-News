@@ -7,6 +7,8 @@ import NewsList from '../components/NewsList';
 import ModalWrap from '../components/ModalWrap';
 import '../styles/app.css';
 
+
+
 class App extends React.Component {
   componentWillMount() {
     this.props.actions.requestTopList();
